@@ -31,7 +31,7 @@
 //#define V6_500_TITAN_TMC 1
 
 // #define V5_330_TITAN_TMC 1
-// #define V5_330_TITAN_NO_TMC 1
+#define V5_330_TITAN_NO_TMC 1
 // #define V5_330_NO_TITAN_TMC 1
 // #define V5_330_NO_TITAN_NO_TMC 1
 // #define XY3_V5_310_NO_TITAN_NO_TMC_NO_ABL 1
@@ -948,7 +948,7 @@
 #elif WITH_TMC && !WITH_TITAN && !WITH_BMG
   #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 800, 186 }
 #elif WITH_TITAN && !WITH_TMC
-  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 420 }
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 396 }
 #else
   #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
 #endif
